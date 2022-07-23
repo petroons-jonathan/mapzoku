@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapzoku</title>
+
+    <!-- Custom CSS & JS-->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="script.js" charset="utf-8" defer></script>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <!-- Leaflet JS-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <!-- Plugin Locate Control CSS-->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.css" />
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Plugin Extra markers -->
+    <link rel="stylesheet" href="dist/css/leaflet.extra-markers.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Page -->
+    <div class="title">
+        <h1>MAP<span class="red">族</span>ZOKU</h1>
+    </div>
+
+    <!-- Initializa Map -->
+    <div class="box-map">
+        <div id="map" style="height: 75vh;border-radius: 5px;"></div>
+    </div>
+
+    <div class="footer">
+        <ul class="social-media">
+            <li><a href="https://www.instagram.com/barjozoku.officiel/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/ClanBarjozoku" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/BarjozokuTW" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCTRxXxg2MWZCsygao9wFSwg" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+        <p class="copyright">© BARJO<span class="red">族</span>ZOKU 2022</p>
+    </div>
+
+    <!-- Script Part -->
+
+    <!-- Outside Arrow Plugin JS-->
+    <script src="Leaflet.EdgeMarker.js"></script>
+
+    <!-- Plugin Locate Control JS-->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.1/dist/L.Control.Locate.min.js"
+        charset="utf-8"></script>
+
+    <!-- Plugin Bounce -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/hosuaby/Leaflet.SmoothMarkerBouncing@v3.0.1/dist/bundle.js"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Font Awesome CDN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Plugin Extra Marker JS-->
+    <script src="dist/js/leaflet.extra-markers.min.js"></script>
+</body>
+
+</html>
