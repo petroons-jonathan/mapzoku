@@ -12,6 +12,18 @@ var clubs = L.layerGroup();
 // Initialize layer for shop
 var shops = L.layerGroup();
 
+// Initialize layer for spot
+var spots = L.layerGroup();
+
+// Color
+
+var green = "#009649";
+var fillgreen = "#00592b";
+var black = "#030303";
+var fillblack = "#9fa1a0";
+var red = "#db0404";
+var fillred = "#750101";
+
 ("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png");
 
 var osm = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -50,6 +62,14 @@ var shopIcon = L.ExtraMarkers.icon({
   prefix: "fa-solid",
 });
 
+// Create a shopIcon
+var spotIcon = L.ExtraMarkers.icon({
+  icon: "fa-camera",
+  markerColor: "green",
+  shape: "penta",
+  prefix: "fa-solid",
+});
+
 let points = [
   // Clubs
 
@@ -61,6 +81,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Charade Speed
@@ -71,6 +93,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Touge club
@@ -81,6 +105,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Pantouflard
@@ -91,6 +117,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Great East Crew
@@ -101,6 +129,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Purples Hearts
@@ -111,6 +141,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Nightsteet Crew
@@ -121,6 +153,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Rusty Runners
@@ -131,6 +165,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Critical Style
@@ -141,6 +177,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Burgundy EastSide Crew
@@ -151,6 +189,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Paname Mafia Squad
@@ -161,6 +201,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Nightkids Zoku
@@ -171,6 +213,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Idiot Crew
@@ -181,6 +225,8 @@ let points = [
     clubs,
     belgique,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Art R413-17
@@ -191,6 +237,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // WallifornieLow
@@ -201,6 +249,8 @@ let points = [
     clubs,
     belgique,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Watata
@@ -211,6 +261,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // NWK
@@ -221,6 +273,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Lyon kanjo club
@@ -231,6 +285,8 @@ let points = [
     clubs,
     france,
     clubIcon,
+    red,
+    fillred,
   ],
 
   // Shops
@@ -243,6 +299,8 @@ let points = [
     shops,
     france,
     shopIcon,
+    black,
+    fillblack,
   ],
 
   // Driftshop
@@ -253,6 +311,8 @@ let points = [
     shops,
     france,
     shopIcon,
+    black,
+    fillblack,
   ],
 
   // RWB France
@@ -263,6 +323,8 @@ let points = [
     shops,
     france,
     shopIcon,
+    black,
+    fillblack,
   ],
 
   // Kennol Performance Oil Belgium
@@ -273,6 +335,8 @@ let points = [
     shops,
     belgique,
     shopIcon,
+    black,
+    fillblack,
   ],
 
   // Radikal BugZ
@@ -283,11 +347,36 @@ let points = [
     shops,
     belgique,
     shopIcon,
+    black,
+    fillblack,
+  ],
+
+  // Spot
+
+  // Radikal BugZ
+  [
+    50.450306,
+    3.937806,
+    "<img class='img-popup' src='images/spot/spot1'/>",
+    spots,
+    belgique,
+    spotIcon,
+    green,
+    fillgreen,
   ],
 ];
 
 for (let i = 0; i < points.length; i++) {
-  const [lat, lng, popupText, category, country, categoryIcon] = points[i];
+  const [
+    lat,
+    lng,
+    popupText,
+    category,
+    country,
+    categoryIcon,
+    color,
+    fillColor,
+  ] = points[i];
 
   marker = new L.marker([lat, lng], { icon: categoryIcon })
     .bindPopup(popupText)
@@ -296,7 +385,16 @@ for (let i = 0; i < points.length; i++) {
     .addTo(all)
     .addTo(map);
 
-  console.log(categoryIcon);
+  circle = new L.circle([lat, lng], {
+    color: color,
+    fillColor: fillColor,
+    fillOpacity: 0.5,
+    radius: 15000,
+  })
+    .addTo(category)
+    .addTo(country)
+    .addTo(all)
+    .addTo(map);
 }
 
 // Options for zoom
@@ -322,6 +420,7 @@ var layerControl = L.control.layers(baseLayers, overlays).addTo(map);
 
 layerControl.addOverlay(clubs, "Club");
 layerControl.addOverlay(shops, "Shop");
+layerControl.addOverlay(spots, "Spot");
 layerControl.addOverlay(france, "France");
 layerControl.addOverlay(belgique, "Belgique");
 

@@ -93,6 +93,11 @@ body {
 }
 
 
+.img-popup {
+    width: 100px;
+    height: 100%;
+}
+
 /* Special effect */
 
 .rotate {
