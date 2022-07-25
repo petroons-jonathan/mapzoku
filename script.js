@@ -17,14 +17,14 @@ var spots = L.layerGroup();
 
 // Color
 
-var green = "#009649";
-var fillgreen = "#00592b";
+var green = "#00592b";
+var fillgreen = "#009649";
 var black = "#030303";
 var fillblack = "#9fa1a0";
-var red = "#db0404";
-var fillred = "#750101";
+var red = "#750101";
+var fillred = "#db0404";
 
-("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png");
+// ("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png");
 
 var osm = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
@@ -351,13 +351,62 @@ let points = [
     fillblack,
   ],
 
+    // HL Chaudronnerie
+    [
+      44.769109,
+      -0.435581,
+      "<b>HL Chaudronnerie</b></br>12 ZA le Limancet,</br>33880 Saint-Caprais-de-Bordeaux,</br>France",
+      shops,
+      belgique,
+      shopIcon,
+      black,
+      fillblack,
+    ],
+
+
   // Spot
 
-  // Radikal BugZ
+  // Spot 1
   [
     50.450306,
     3.937806,
-    "<img class='img-popup' src='images/spot/spot1'/>",
+    '<img class="img-popup" src="images/spot/spot1.jpg"/></br><b><a class="link-popup" href="https://www.google.be/maps/place/50%C2%B027\'01.1%22N+3%C2%B056\'16.1%22E/@50.4503151,3.936359,504m/data=!3m1!1e3!4m14!1m7!3m6!1s0x47c24558a6578cfb:0x40099ab2f4d6c90!2sMons!3b1!8m2!3d50.4546634!4d3.9523135!3m5!1s0x0:0xa241d0dfb1ca5e72!7e2!8m2!3d50.4503141!4d3.9378128?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Francois Bury</b></p>',
+    spots,
+    belgique,
+    spotIcon,
+    green,
+    fillgreen,
+  ],
+
+  // Spot 2
+  [
+    50.455139,
+    3.929278,
+    '<img class="img-popup" src="images/spot/spot2.jpg"/></br><b><a class="link-popup" href="https://www.google.be/maps/place/50%C2%B027\'18.1%22N+3%C2%B055\'46.3%22E/@50.4550193,3.9250433,17z/data=!3m1!4b1!4m13!1m6!3m5!1s0x47c25072b41720e1:0xa231b4b619f4f6d1!2sIKEA+Mons!8m2!3d50.4561636!4d3.9297965!3m5!1s0x0:0xe96fd1e57d82e584!7e2!8m2!3d50.455016!4d3.9295283?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Francois Bury</b></p>',
+    spots,
+    belgique,
+    spotIcon,
+    green,
+    fillgreen,
+  ],
+
+  // Spot 3
+  [
+    50.451222,
+    3.915333,
+    '<img class="img-popup" src="images/spot/spot3.jpg"/></br><b><a class="link-popup" href="https://www.google.be/maps/place/50%C2%B027\'04.4%22N+3%C2%B054\'55.2%22E/@50.4512222,3.9138847,548m/data=!3m2!1e3!4b1!4m13!1m6!3m5!1s0x47c25072b41720e1:0xa231b4b619f4f6d1!2sIKEA+Mons!8m2!3d50.4561636!4d3.9297965!3m5!1s0x0:0xc4634a918d65a5ff!7e2!8m2!3d50.4512297!4d3.9153389?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Francois Bury</b></p>',
+    spots,
+    belgique,
+    spotIcon,
+    green,
+    fillgreen,
+  ],
+
+  // Spot 4
+  [
+    50.450213,
+    3.937518,
+    '<img class="img-popup" src="images/spot/spot4.jpg"/></br><b><a class="link-popup" href="https://www.google.be/maps/place/50%C2%B027\'00.8%22N+3%C2%B056\'15.1%22E/@50.450213,3.9353293,548m/data=!3m2!1e3!4b1!4m14!1m7!3m6!1s0x47c24558a6578cfb:0x40099ab2f4d6c90!2sMons!3b1!8m2!3d50.4546634!4d3.9523135!3m5!1s0x0:0x9c5bda894c67e8ce!7e2!8m2!3d50.4502126!4d3.9375177?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Francois Bury</b></p>',
     spots,
     belgique,
     spotIcon,
@@ -388,8 +437,8 @@ for (let i = 0; i < points.length; i++) {
   circle = new L.circle([lat, lng], {
     color: color,
     fillColor: fillColor,
-    fillOpacity: 0.5,
-    radius: 15000,
+    fillOpacity: 0.1,
+    radius: 10000,
   })
     .addTo(category)
     .addTo(country)
@@ -400,7 +449,7 @@ for (let i = 0; i < points.length; i++) {
 // Options for zoom
 
 map.options.minZoom = 5;
-map.options.maxZoom = 9;
+map.options.maxZoom = 16;
 
 // Overlays options
 

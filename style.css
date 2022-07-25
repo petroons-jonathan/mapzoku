@@ -94,8 +94,19 @@ body {
 
 
 .img-popup {
-    width: 100px;
+    width: 150px;
     height: 100%;
+}
+
+.link-popup {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: var(--opensans);
+    color:#bf0600 !important;
+}
+
+.copy-photo {
+    margin: 5px 0px !important;
 }
 
 /* Special effect */
