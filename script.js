@@ -143,16 +143,6 @@ let points = [
     clubIcon,
   ],
 
-  // Radikal Bugs
-  [
-    50.47605,
-    3.903746,
-    "<b>Radikal Bugs</b></br>7011 Ghlin Belgique",
-    clubs,
-    belgique,
-    clubIcon,
-  ],
-
   // Burgundy EastSide Crew
   [
     47.6233,
@@ -280,6 +270,16 @@ let points = [
     50.815581,
     3.210518,
     "<b>Kennol Performance Oil Belgium</b></br>Vlamingstraat 4,</br>8560 Wevelgem,</br>Belgique",
+    shops,
+    belgique,
+    shopIcon,
+  ],
+
+  // Radikal BugZ
+  [
+    50.47605,
+    3.903746,
+    "<b>Radikal BugZ</b></br>4 route de Wallonie,</br>7011 Ghlin,</br>Belgique",
     shops,
     belgique,
     shopIcon,
