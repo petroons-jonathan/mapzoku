@@ -363,6 +363,18 @@ let points = [
       fillblack,
     ],
 
+    // Luca's Motorcycle service
+    [
+      44.769109,
+      -0.435581,
+      "<b>Luca's Motorcycle service</b></br>18 rue du Clozeloux,</br>63230 Saint-Ours-les-Roches,</br>France",
+      shops,
+      belgique,
+      shopIcon,
+      black,
+      fillblack,
+    ],
+
 
   // Spot
 
@@ -413,6 +425,8 @@ let points = [
     green,
     fillgreen,
   ],
+
+  
 ];
 
 for (let i = 0; i < points.length; i++) {
