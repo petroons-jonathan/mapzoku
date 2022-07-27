@@ -26,10 +26,15 @@ var fillred = "#db0404";
 
 // ("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png");
 
-var osm = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> | contributors &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a> | &copy; <a href="" target="_blank">Barjozoku</a>',
-  // Attribution is obligatory as per copyright!
+// var osm = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+//   attribution:
+//     '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> | contributors &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a> | &copy; <a href="" target="_blank">Barjozoku</a>',
+//   // Attribution is obligatory as per copyright!
+// });
+
+var osm = L.tileLayer('https://{s}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png?apikey={apikey}', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	apikey: '19ec21d48f654ee296ed6afda1da62ba',
 });
 
 // Choice options for map
