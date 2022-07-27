@@ -357,7 +357,7 @@ let points = [
       -0.435581,
       "<b>HL Chaudronnerie</b></br>12 ZA le Limancet,</br>33880 Saint-Caprais-de-Bordeaux,</br>France",
       shops,
-      belgique,
+      france,
       shopIcon,
       black,
       fillblack,
@@ -365,11 +365,11 @@ let points = [
 
     // Luca's Motorcycle service
     [
-      44.769109,
-      -0.435581,
+      45.850830,
+      2.892500,
       "<b>Luca's Motorcycle service</b></br>18 rue du Clozeloux,</br>63230 Saint-Ours-les-Roches,</br>France",
       shops,
-      belgique,
+      france,
       shopIcon,
       black,
       fillblack,
