@@ -294,6 +294,18 @@ let points = [
     fillred,
   ],
 
+  // RICERSQUAD
+  [
+    47.808056,
+    7.337500,
+    "<b>Ricersquad</b></br>68270 Wittenheim France",
+    clubs,
+    france,
+    clubIcon,
+    red,
+    fillred,
+  ],
+
   // Shops
 
   // Motorsport Héritage
