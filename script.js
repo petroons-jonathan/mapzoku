@@ -442,6 +442,17 @@ let points = [
     green,
     fillgreen,
   ],
+  // Spot GARE
+  [
+    50.457750,
+    3.945111,
+    '<img class="img-popup" src="images/spot/GARE.jpg"/></br><b><a class="link-popup" https://www.google.be/maps/place/50%C2%B027\'27.9%22N+3%C2%B056\'42.4%22E/@50.4577637,3.9428757,363m/data=!3m1!1e3!4m14!1m7!3m6!1s0x47c24558a6578cfb:0x40099ab2f4d6c90!2sMons!3b1!8m2!3d50.4546634!4d3.9523135!3m5!1s0x0:0x6b8eeda583a3979f!7e2!8m2!3d50.4577619!4d3.9451181?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Francois Bury</b></p>',
+    spots,
+    belgique,
+    spotIcon,
+    green,
+    fillgreen,
+  ],
 
   
 ];
