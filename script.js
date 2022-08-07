@@ -5,6 +5,7 @@ var all = L.layerGroup();
 // Initialize Country
 var france = L.layerGroup();
 var belgique = L.layerGroup();
+var europe = L.layerGroup();
 
 // Initialize layer for club
 var clubs = L.layerGroup();
@@ -41,7 +42,7 @@ var osm = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 var map = L.map("map", {
   tap: false,
   center: [47.401012, 4.213326],
-  zoom: 5,
+  zoom: 4,
   layers: [osm, all],
 });
 
@@ -392,6 +393,18 @@ let points = [
       fillblack,
     ],
 
+    // Luca's Motorcycle service
+    [
+      56.965097,
+      24.075100,
+      "<b>Luca's Motorcycle service</b></br>Tvaikoņu iela 5,</br>Kurzemes rajons, Rīga, LV-1007,</br>Lettonie",
+      shops,
+      europe,
+      shopIcon,
+      black,
+      fillblack,
+    ],
+
 
   // Spot
 
@@ -490,7 +503,7 @@ for (let i = 0; i < points.length; i++) {
 
 // Options for zoom
 
-map.options.minZoom = 5;
+map.options.minZoom = 4;
 map.options.maxZoom = 16;
 
 // Overlays options
@@ -514,6 +527,7 @@ layerControl.addOverlay(shops, "Shop");
 layerControl.addOverlay(spots, "Spot");
 layerControl.addOverlay(france, "France");
 layerControl.addOverlay(belgique, "Belgique");
+layerControl.addOverlay(europe, "Europe");
 
 // Geolocalisation
 
