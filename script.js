@@ -298,10 +298,94 @@ let points = [
   // RICERSQUAD
   [
     47.808056,
-    7.337500,
+    7.3375,
     "<b>Ricersquad</b></br>68270 Wittenheim France",
     clubs,
     france,
+    clubIcon,
+    red,
+    fillred,
+  ],
+
+  // NR Performance
+  [
+    50.436171,
+    3.920665,
+    "<b>NR Performance</b></br>7033 Cuesmes Belgique",
+    clubs,
+    belgique,
+    clubIcon,
+    red,
+    fillred,
+  ],
+
+  // Old School Crew Drifting
+  [
+    46.159058,
+    -1.151715,
+    "<b>Old School Crew Drifting</b></br>17000 La Rochelle France",
+    clubs,
+    france,
+    clubIcon,
+    red,
+    fillred,
+  ],
+
+  // RICERSQUAD Blitzheim
+  [
+    47.958333,
+    7.388889,
+    "<b>Ricersquad</b></br>68127 Biltzheim France",
+    clubs,
+    france,
+    clubIcon,
+    red,
+    fillred,
+  ],
+
+  // RICERSQUAD Section Azzura
+  [
+    43.834167,
+    5.783889,
+    "<b>Ricersquad Section Azzura</b></br>04100 Manosque France",
+    clubs,
+    france,
+    clubIcon,
+    red,
+    fillred,
+  ],
+
+  // RICERSQUAD Section Azuma
+  [
+    48.257222,
+    3.729167,
+    "<b>Ricersquad Section Azuma</b></br>10190 Villemaur-sur-Vanne France",
+    clubs,
+    france,
+    clubIcon,
+    red,
+    fillred,
+  ],
+
+  // RICERSQUAD Section R.A.F.
+  [
+    45.757800,
+    4.832200,
+    "<b>Ricersquad Section R.A.F.</b></br>69000 Lyon France",
+    clubs,
+    france,
+    clubIcon,
+    red,
+    fillred,
+  ],
+
+  // Suzuran Crou
+  [
+    50.483000,
+    3.600000,
+    "<b>Suzuran Crou</b></br>7603 Bon-Secours Belgique",
+    clubs,
+    belgique,
     clubIcon,
     red,
     fillred,
@@ -369,42 +453,41 @@ let points = [
     fillblack,
   ],
 
-    // HL Chaudronnerie
-    [
-      44.769109,
-      -0.435581,
-      "<b>HL Chaudronnerie</b></br>12 ZA le Limancet,</br>33880 Saint-Caprais-de-Bordeaux,</br>France",
-      shops,
-      france,
-      shopIcon,
-      black,
-      fillblack,
-    ],
+  // HL Chaudronnerie
+  [
+    44.769109,
+    -0.435581,
+    "<b>HL Chaudronnerie</b></br>12 ZA le Limancet,</br>33880 Saint-Caprais-de-Bordeaux,</br>France",
+    shops,
+    france,
+    shopIcon,
+    black,
+    fillblack,
+  ],
 
-    // Luca's Motorcycle service
-    [
-      45.850830,
-      2.892500,
-      "<b>Luca's Motorcycle service</b></br>18 rue du Clozeloux,</br>63230 Saint-Ours-les-Roches,</br>France",
-      shops,
-      france,
-      shopIcon,
-      black,
-      fillblack,
-    ],
+  // Luca's Motorcycle service
+  [
+    45.85083,
+    2.8925,
+    "<b>Luca's Motorcycle service</b></br>18 rue du Clozeloux,</br>63230 Saint-Ours-les-Roches,</br>France",
+    shops,
+    france,
+    shopIcon,
+    black,
+    fillblack,
+  ],
 
-    // Luca's Motorcycle service
-    [
-      56.965097,
-      24.075100,
-      "<b>Luca's Motorcycle service</b></br>Tvaikoņu iela 5,</br>Kurzemes rajons, Rīga, LV-1007,</br>Lettonie",
-      shops,
-      europe,
-      shopIcon,
-      black,
-      fillblack,
-    ],
-
+  // PROTUNING
+  [
+    56.965097,
+    24.0751,
+    "<b>Protuning</b></br>Tvaikoņu iela 5,</br>Kurzemes rajons, Rīga, LV-1007,</br>Lettonie",
+    shops,
+    europe,
+    shopIcon,
+    black,
+    fillblack,
+  ],
 
   // Spot
 
@@ -457,9 +540,9 @@ let points = [
   ],
   // Spot GARE
   [
-    50.457750,
+    50.45775,
     3.945111,
-    '<img class="img-popup" src="images/spot/GARE.jpg"/></br><b><a class="link-popup" https://www.google.be/maps/place/50%C2%B027\'27.9%22N+3%C2%B056\'42.4%22E/@50.4577637,3.9428757,363m/data=!3m1!1e3!4m14!1m7!3m6!1s0x47c24558a6578cfb:0x40099ab2f4d6c90!2sMons!3b1!8m2!3d50.4546634!4d3.9523135!3m5!1s0x0:0x6b8eeda583a3979f!7e2!8m2!3d50.4577619!4d3.9451181?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Francois Bury</b></p>',
+    '<img class="img-popup" src="images/spot/GARE.jpg"/></br><b><a class="link-popup" href="https://www.google.be/maps/place/50%C2%B027\'27.9%22N+3%C2%B056\'42.4%22E/@50.4577637,3.9428757,363m/data=!3m1!1e3!4m14!1m7!3m6!1s0x47c24558a6578cfb:0x40099ab2f4d6c90!2sMons!3b1!8m2!3d50.4546634!4d3.9523135!3m5!1s0x0:0x6b8eeda583a3979f!7e2!8m2!3d50.4577619!4d3.9451181?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Francois Bury</b></p>',
     spots,
     belgique,
     spotIcon,
@@ -467,7 +550,53 @@ let points = [
     fillgreen,
   ],
 
-  
+  // Spot France 1 C63 AMG
+  [
+    46.691676,
+    -1.428529,
+    '<img class="img-popup" src="images/spot/amgc63.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B041\'30.0%22N+1%C2%B025\'42.7%22W/@46.6916667,-1.4307165,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x119e839d7a70a100!8m2!3d46.691676!4d-1.428529?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Stü_Bō</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+  ],
+
+    // Spot France 1 Audi S5
+    [
+      46.691777,
+      -1.429086,
+      '<img class="img-popup" src="images/spot/audis5.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B041\'30.4%22N+1%C2%B025\'44.7%22W/@46.6917778,-1.431272,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x0:0x119e839d7a70a100!2zNDbCsDQxJzMwLjAiTiAxwrAyNSc0Mi43Ilc!3b1!8m2!3d46.691676!4d-1.428529!3m5!1s0x0:0xab0c29724ee11bfb!7e2!8m2!3d46.6917771!4d-1.4290857?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Stü_Bō</b></p>',
+      spots,
+      france,
+      spotIcon,
+      green,
+      fillgreen,
+    ],
+
+    // Spot France 1 350z
+    [
+      46.671895,
+      -1.405765,
+      '<img class="img-popup" src="images/spot/nissan.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B040\'18.8%22N+1%C2%B024\'20.8%22W/@46.671895,-1.4079537,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb0c9c20a13cf5cbb!8m2!3d46.671895!4d-1.405765?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Leclerc</b></p>',
+      spots,
+      france,
+      spotIcon,
+      green,
+      fillgreen,
+    ],
+
+    // Spot France 1 double bmw
+    [
+      46.5520521,
+      -1.0078809,
+      '<img class="img-popup" src="images/spot/doublebmw.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B033\'07.4%22N+1%C2%B000\'28.4%22W/@46.5520521,-1.0100696,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x5ab5b4a7d8b2db28!8m2!3d46.5520521!4d-1.0078809?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Thiré</b></p>',
+      spots,
+      france,
+      spotIcon,
+      green,
+      fillgreen,
+    ],
 ];
 
 for (let i = 0; i < points.length; i++) {
