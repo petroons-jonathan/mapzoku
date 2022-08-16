@@ -89,6 +89,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Charade Speed
@@ -101,6 +102,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Touge club
@@ -113,6 +115,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Pantouflard
@@ -125,6 +128,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Great East Crew
@@ -137,6 +141,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Purples Hearts
@@ -149,6 +154,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Nightsteet Crew
@@ -161,6 +167,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Rusty Runners
@@ -173,6 +180,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Critical Style
@@ -185,6 +193,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Burgundy EastSide Crew
@@ -197,6 +206,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Paname Mafia Squad
@@ -209,6 +219,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Nightkids Zoku
@@ -221,6 +232,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Idiot Crew
@@ -233,6 +245,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Art R413-17
@@ -245,6 +258,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // WallifornieLow
@@ -257,6 +271,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Watata
@@ -269,6 +284,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // NWK
@@ -281,6 +297,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Lyon kanjo club
@@ -293,6 +310,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // RICERSQUAD
@@ -305,6 +323,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // NR Performance
@@ -317,6 +336,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Old School Crew Drifting
@@ -329,6 +349,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // RICERSQUAD Blitzheim
@@ -341,6 +362,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // RICERSQUAD Section Azzura
@@ -353,6 +375,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // RICERSQUAD Section Azuma
@@ -365,6 +388,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // RICERSQUAD Section R.A.F.
@@ -377,6 +401,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Suzuran Crou
@@ -389,6 +414,7 @@ let points = [
     clubIcon,
     red,
     fillred,
+    15000,
   ],
 
   // Shops
@@ -403,18 +429,20 @@ let points = [
     shopIcon,
     black,
     fillblack,
+    0,
   ],
 
   // Driftshop
   [
     47.835359,
     7.223119,
-    "<b>Drifshop</b></br>5 Rue des Mines,</br>68500 Berrwiller,</br>France",
+    "<b>Driftshop</b></br>5 Rue des Mines,</br>68500 Berrwiller,</br>France",
     shops,
     france,
     shopIcon,
     black,
     fillblack,
+    0,
   ],
 
   // RWB France
@@ -427,6 +455,7 @@ let points = [
     shopIcon,
     black,
     fillblack,
+    0,
   ],
 
   // Kennol Performance Oil Belgium
@@ -439,6 +468,7 @@ let points = [
     shopIcon,
     black,
     fillblack,
+    0,
   ],
 
   // Radikal BugZ
@@ -451,6 +481,7 @@ let points = [
     shopIcon,
     black,
     fillblack,
+    0,
   ],
 
   // HL Chaudronnerie
@@ -463,6 +494,7 @@ let points = [
     shopIcon,
     black,
     fillblack,
+    0,
   ],
 
   // Luca's Motorcycle service
@@ -475,6 +507,7 @@ let points = [
     shopIcon,
     black,
     fillblack,
+    0,
   ],
 
   // PROTUNING
@@ -487,6 +520,7 @@ let points = [
     shopIcon,
     black,
     fillblack,
+    0,
   ],
 
   // Spot
@@ -501,6 +535,7 @@ let points = [
     spotIcon,
     green,
     fillgreen,
+    0,
   ],
 
   // Spot 2
@@ -513,6 +548,7 @@ let points = [
     spotIcon,
     green,
     fillgreen,
+    0,
   ],
 
   // Spot 3
@@ -525,6 +561,7 @@ let points = [
     spotIcon,
     green,
     fillgreen,
+    0,
   ],
 
   // Spot 4
@@ -537,6 +574,7 @@ let points = [
     spotIcon,
     green,
     fillgreen,
+    0,
   ],
   // Spot GARE
   [
@@ -548,6 +586,7 @@ let points = [
     spotIcon,
     green,
     fillgreen,
+    0,
   ],
 
   // Spot France 1 C63 AMG
@@ -560,6 +599,7 @@ let points = [
     spotIcon,
     green,
     fillgreen,
+    0,
   ],
 
     // Spot France 1 Audi S5
@@ -572,6 +612,7 @@ let points = [
       spotIcon,
       green,
       fillgreen,
+      0,
     ],
 
     // Spot France 1 350z
@@ -584,6 +625,7 @@ let points = [
       spotIcon,
       green,
       fillgreen,
+      0,
     ],
 
     // Spot France 1 double bmw
@@ -596,6 +638,7 @@ let points = [
       spotIcon,
       green,
       fillgreen,
+      0,
     ],
 ];
 
@@ -609,6 +652,7 @@ for (let i = 0; i < points.length; i++) {
     categoryIcon,
     color,
     fillColor,
+    radius,
   ] = points[i];
 
   marker = new L.marker([lat, lng], { icon: categoryIcon })
@@ -621,14 +665,17 @@ for (let i = 0; i < points.length; i++) {
   circle = new L.circle([lat, lng], {
     color: color,
     fillColor: fillColor,
-    fillOpacity: 0.1,
-    radius: 10000,
+    fillOpacity: 0.2,
+    radius: radius,
   })
     .addTo(category)
     .addTo(country)
     .addTo(all)
     .addTo(map);
+
 }
+
+
 
 // Options for zoom
 
