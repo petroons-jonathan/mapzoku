@@ -16,6 +16,9 @@ var shops = L.layerGroup();
 // Initialize layer for spot
 var spots = L.layerGroup();
 
+// Initialize layer for spot
+var crashs = L.layerGroup();
+
 // Color
 
 var green = "#00592b";
@@ -24,6 +27,8 @@ var black = "#030303";
 var fillblack = "#9fa1a0";
 var red = "#750101";
 var fillred = "#db0404";
+var blue = "#1b5299";
+var fillblue = "#54c6eb";
 
 // ("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png");
 
@@ -72,6 +77,14 @@ var shopIcon = L.ExtraMarkers.icon({
 var spotIcon = L.ExtraMarkers.icon({
   icon: "fa-camera",
   markerColor: "green",
+  shape: "penta",
+  prefix: "fa-solid",
+});
+
+// Create a crashIcon
+var crashIcon = L.ExtraMarkers.icon({
+  icon: "fa-skull",
+  markerColor: "blue",
   shape: "penta",
   prefix: "fa-solid",
 });
@@ -211,11 +224,11 @@ let points = [
     15000,
   ],
 
-  // Paname Mafia Squad
+  // Panam Mafia Squad
   [
     48.528867,
     2.015629,
-    "<b>Paname Mafia Squad</b></br>91410 Dourdan France",
+    "<b>Panam Mafia Squad</b></br>91410 Dourdan France",
     clubs,
     france,
     clubIcon,
@@ -395,8 +408,8 @@ let points = [
 
   // RICERSQUAD Section R.A.F.
   [
-    45.757800,
-    4.832200,
+    45.7578,
+    4.8322,
     "<b>Ricersquad Section R.A.F.</b></br>69000 Lyon France",
     clubs,
     france,
@@ -408,8 +421,8 @@ let points = [
 
   // Suzuran Crou
   [
-    50.483000,
-    3.600000,
+    50.483,
+    3.6,
     "<b>Suzuran Crou</b></br>7603 Bon-Secours Belgique",
     clubs,
     belgique,
@@ -422,7 +435,7 @@ let points = [
   // Touge Fever Factory
   [
     46.219444,
-    4.520000,
+    4.52,
     "<b>Touge Fever Factory</b></br>69860 Monsols France",
     clubs,
     france,
@@ -434,8 +447,8 @@ let points = [
 
   // AligotNightTouge en Lozère
   [
-    44.519440,
-    3.501390,
+    44.51944,
+    3.50139,
     "<b>AligotNightTouge en Lozère</b></br>48000 Mende France",
     clubs,
     france,
@@ -448,7 +461,7 @@ let points = [
   // Great Est Crew
   [
     49.040278,
-    3.960000,
+    3.96,
     "<b>Great Est Crew</b></br>51200 Epernay France",
     clubs,
     france,
@@ -461,7 +474,7 @@ let points = [
   // Auto Rasso Aveyron
   [
     44.350556,
-    2.575000,
+    2.575,
     "<b>Auto Rasso Aveyron</b></br>12000 Rodez France",
     clubs,
     france,
@@ -473,7 +486,7 @@ let points = [
 
   // Nightshift
   [
-    45.755230,
+    45.75523,
     4.842237,
     "<b>Nightshift</b></br>69000 Lyon France",
     clubs,
@@ -605,7 +618,7 @@ let points = [
     0,
   ],
 
-  // JM Autosport 
+  // JM Autosport
   [
     43.543502,
     5.159877,
@@ -738,201 +751,261 @@ let points = [
     0,
   ],
 
-    // Spot France 1 Audi S5
-    [
-      46.691777,
-      -1.429086,
-      '<img class="img-popup" src="images/spot/audis5.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B041\'30.4%22N+1%C2%B025\'44.7%22W/@46.6917778,-1.431272,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x0:0x119e839d7a70a100!2zNDbCsDQxJzMwLjAiTiAxwrAyNSc0Mi43Ilc!3b1!8m2!3d46.691676!4d-1.428529!3m5!1s0x0:0xab0c29724ee11bfb!7e2!8m2!3d46.6917771!4d-1.4290857?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Stü_Bō</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France 1 Audi S5
+  [
+    46.691777,
+    -1.429086,
+    '<img class="img-popup" src="images/spot/audis5.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B041\'30.4%22N+1%C2%B025\'44.7%22W/@46.6917778,-1.431272,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x0:0x119e839d7a70a100!2zNDbCsDQxJzMwLjAiTiAxwrAyNSc0Mi43Ilc!3b1!8m2!3d46.691676!4d-1.428529!3m5!1s0x0:0xab0c29724ee11bfb!7e2!8m2!3d46.6917771!4d-1.4290857?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Stü_Bō</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France 1 350z
-    [
-      46.671895,
-      -1.405765,
-      '<img class="img-popup" src="images/spot/nissan.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B040\'18.8%22N+1%C2%B024\'20.8%22W/@46.671895,-1.4079537,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb0c9c20a13cf5cbb!8m2!3d46.671895!4d-1.405765?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Leclerc</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France 1 350z
+  [
+    46.671895,
+    -1.405765,
+    '<img class="img-popup" src="images/spot/nissan.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B040\'18.8%22N+1%C2%B024\'20.8%22W/@46.671895,-1.4079537,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb0c9c20a13cf5cbb!8m2!3d46.671895!4d-1.405765?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Leclerc</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France 1 double bmw
-    [
-      46.5520521,
-      -1.0078809,
-      '<img class="img-popup" src="images/spot/doublebmw.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B033\'07.4%22N+1%C2%B000\'28.4%22W/@46.5520521,-1.0100696,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x5ab5b4a7d8b2db28!8m2!3d46.5520521!4d-1.0078809?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Thiré</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France 1 double bmw
+  [
+    46.5520521,
+    -1.0078809,
+    '<img class="img-popup" src="images/spot/doublebmw.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B033\'07.4%22N+1%C2%B000\'28.4%22W/@46.5520521,-1.0100696,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x5ab5b4a7d8b2db28!8m2!3d46.5520521!4d-1.0078809?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Thiré</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France Clarensac
-    [
-      43.8365382,
-      4.223136,
-      '<img class="img-popup" src="images/spot/clarensac.jpg"/></br><b><a class="link-popup" href="https://www.google.fr/maps/place/Point+de+Vue+Clarensac/@43.8365382,4.223136,16z/data=!4m5!3m4!1s0x12b4257aa81e237f:0x992b483111a2d465!8m2!3d43.8366964!4d4.2230855" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Julien Rappin</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France Clarensac
+  [
+    43.8365382,
+    4.223136,
+    '<img class="img-popup" src="images/spot/clarensac.jpg"/></br><b><a class="link-popup" href="https://www.google.fr/maps/place/Point+de+Vue+Clarensac/@43.8365382,4.223136,16z/data=!4m5!3m4!1s0x12b4257aa81e237f:0x992b483111a2d465!8m2!3d43.8366964!4d4.2230855" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Julien Rappin</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France Saint-Nectaire
-    [
-      45.5924784,
-      2.9605751,
-      '<img class="img-popup" src="images/spot/saint-nectaire.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/63710+Saint-Nectaire,+France/@45.5924784,2.9605751,13z/data=!3m1!4b1!4m13!1m7!3m6!1s0x0:0xebae9b3e8d8e825e!2zNDXCsDM1JzUyLjAiTiAywrA1OSc0OS4yIkU!3b1!8m2!3d45.5977778!4d2.997!3m4!1s0x47f7086f79a8a891:0xc8ce16e1c11f712f!8m2!3d45.589082!4d2.992862" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>yoy_s13_drift</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France Saint-Nectaire
+  [
+    45.5924784,
+    2.9605751,
+    '<img class="img-popup" src="images/spot/saint-nectaire.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/63710+Saint-Nectaire,+France/@45.5924784,2.9605751,13z/data=!3m1!4b1!4m13!1m7!3m6!1s0x0:0xebae9b3e8d8e825e!2zNDXCsDM1JzUyLjAiTiAywrA1OSc0OS4yIkU!3b1!8m2!3d45.5977778!4d2.997!3m4!1s0x47f7086f79a8a891:0xc8ce16e1c11f712f!8m2!3d45.589082!4d2.992862" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>yoy_s13_drift</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France Fresnaye
-    [
-      48.8974054,
-      -0.1947861,
-      '<img class="img-popup" src="images/spot/fresnaye.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/Ch%C3%A2teau+de+la+Fresnaye/@48.8974054,-0.1947861,17.26z/data=!4m5!3m4!1s0x480a106f3ae728e3:0x9734bd4e34e9243!8m2!3d48.8974392!4d-0.1948215" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Anonymous</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France Fresnaye
+  [
+    48.8974054,
+    -0.1947861,
+    '<img class="img-popup" src="images/spot/fresnaye.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/Ch%C3%A2teau+de+la+Fresnaye/@48.8974054,-0.1947861,17.26z/data=!4m5!3m4!1s0x480a106f3ae728e3:0x9734bd4e34e9243!8m2!3d48.8974392!4d-0.1948215" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Anonymous</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France Nimes
-    [
-      43.8081667,
-      4.3241111,
-      '<img class="img-popup" src="images/spot/nimes.jpg"/></br><b><a class="link-popup" href="https://www.google.be/maps/place/43%C2%B048\'29.4%22N+4%C2%B019\'26.8%22E/@43.8081667,4.3241111,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x15f95664f546d242!8m2!3d43.8081721!4d4.3241003?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Cyril Klain</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France Nimes
+  [
+    43.8081667,
+    4.3241111,
+    '<img class="img-popup" src="images/spot/nimes.jpg"/></br><b><a class="link-popup" href="https://www.google.be/maps/place/43%C2%B048\'29.4%22N+4%C2%B019\'26.8%22E/@43.8081667,4.3241111,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x15f95664f546d242!8m2!3d43.8081721!4d4.3241003?hl=fr" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Cyril Klain</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France Ambierle
-    [
-      46.104661,
-      3.895683,
-      '<img class="img-popup" src="images/spot/ambierle.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B006\'16.8%22N+3%C2%B053\'44.5%22E/@46.104661,3.895683,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xdf258f429d52efeb!8m2!3d46.104661!4d3.895683" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Loris</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France Ambierle
+  [
+    46.104661,
+    3.895683,
+    '<img class="img-popup" src="images/spot/ambierle.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B006\'16.8%22N+3%C2%B053\'44.5%22E/@46.104661,3.895683,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xdf258f429d52efeb!8m2!3d46.104661!4d3.895683" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Loris</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France Le Coteau
-    [
-      46.008982,
-      4.096488,
-      '<img class="img-popup" src="images/spot/lecoteau.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/46.008982,+4.096488?sa=X&ved=2ahUKEwjVhuTdmMz5AhXVu6QKHTDWCEIQ8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Loris</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France Le Coteau
+  [
+    46.008982,
+    4.096488,
+    '<img class="img-popup" src="images/spot/lecoteau.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/46.008982,+4.096488?sa=X&ved=2ahUKEwjVhuTdmMz5AhXVu6QKHTDWCEIQ8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Loris</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France Villerest
-    [
-      45.987929,
-      4.047184,
-      '<img class="img-popup" src="images/spot/villerest.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/45.987929,+4.047184?sa=X&ved=2ahUKEwiT87ONmcz5AhUJtqQKHYkcD40Q8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Loris</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France Villerest
+  [
+    45.987929,
+    4.047184,
+    '<img class="img-popup" src="images/spot/villerest.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/45.987929,+4.047184?sa=X&ved=2ahUKEwiT87ONmcz5AhUJtqQKHYkcD40Q8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Loris</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France Usine OTR
-    [
-      45.7536506,
-      3.967884,
-      '<img class="img-popup" src="images/spot/usine-otr.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/45%C2%B045\'13.1%22N+3%C2%B058\'04.4%22E/@45.7536506,3.967884,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xf0c697c044f6805b!8m2!3d45.7536506!4d3.967884" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>OTR eSport</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France Usine OTR
+  [
+    45.7536506,
+    3.967884,
+    '<img class="img-popup" src="images/spot/usine-otr.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/45%C2%B045\'13.1%22N+3%C2%B058\'04.4%22E/@45.7536506,3.967884,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xf0c697c044f6805b!8m2!3d45.7536506!4d3.967884" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>OTR eSport</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France hotel OTR
-    [
-      45.3870047,
-      4.6127461,
-      '<img class="img-popup" src="images/spot/hotel-otr.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/45%C2%B023\'13.2%22N+4%C2%B036\'45.9%22E/@45.3870047,4.6127461,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x563ca8cbb500bce7!8m2!3d45.3870047!4d4.6127461" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>OTR eSport</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France hotel OTR
+  [
+    45.3870047,
+    4.6127461,
+    '<img class="img-popup" src="images/spot/hotel-otr.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/45%C2%B023\'13.2%22N+4%C2%B036\'45.9%22E/@45.3870047,4.6127461,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x563ca8cbb500bce7!8m2!3d45.3870047!4d4.6127461" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>OTR eSport</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot France chateau OTR
-    [
-      45.896608,
-      4.101832,
-      '<img class="img-popup" src="images/spot/chateau-otr.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/45.896608,+4.101832?sa=X&ved=2ahUKEwiLsc2dm8z5AhWJnaQKHQWCCKwQ8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>OTR eSport</b></p>',
-      spots,
-      france,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France chateau OTR
+  [
+    45.896608,
+    4.101832,
+    '<img class="img-popup" src="images/spot/chateau-otr.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/45.896608,+4.101832?sa=X&ved=2ahUKEwiLsc2dm8z5AhWJnaQKHQWCCKwQ8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>OTR eSport</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot Belgique Rochefort
-    [
-      50.115619,
-      5.0919252,
-      '<img class="img-popup" src="images/spot/rochefort.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/Rue+du+Ch%C3%A2teau+8,+5580+Rochefort/@50.115619,5.0919252,17z/data=!3m1!4b1!4m5!3m4!1s0x47c1cf79b4632161:0x4387c3bde8503eed!8m2!3d50.115619!4d5.0919252" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Thomas Buntinx</b></p>',
-      spots,
-      belgique,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France Hostens
+  [
+    44.4974947,
+    -0.6518392,
+    '<img class="img-popup" src="images/spot/hostens.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/44%C2%B029\'51.0%22N+0%C2%B039\'06.6%22W/@44.4974947,-0.6518392,17z/data=!4m5!3m4!1s0x0:0x47fb617c0d049e3a!8m2!3d44.4974947!4d-0.6518392" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Stü_Bō</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
-    // Spot Belgique Dinant
-    [
-      50.2418056,
-      4.894,
-      '<img class="img-popup" src="images/spot/dinant.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/50%C2%B014\'30.5%22N+4%C2%B053\'38.4%22E/@50.2418056,4.894,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x5be4d2b43d5ca5c4!7e2!8m2!3d50.2418036!4d4.8939992" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Retard Racing</b></p>',
-      spots,
-      belgique,
-      spotIcon,
-      green,
-      fillgreen,
-      0,
-    ],
+  // Spot France Trio Merguez
+  [
+    44.769214,
+    -0.435511,
+    '<img class="img-popup" src="images/spot/triomerguez.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/44%C2%B046\'09.2%22N+0%C2%B026\'07.8%22W/@44.769214,-0.435511,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x790429f57ff88a09!8m2!3d44.769214!4d-0.435511" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Stü_Bō</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France AkiraZoku
+  [
+    49.1190551,
+    6.1221065,
+    '<img class="img-popup" src="images/spot/bjzk.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/49.1190551,+6.1221065?sa=X&ved=2ahUKEwjBwb3kw875AhXMCewKHSeTDXAQ8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>AkiraZoku</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot Belgique Rochefort
+  [
+    50.115619,
+    5.0919252,
+    '<img class="img-popup" src="images/spot/rochefort.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/Rue+du+Ch%C3%A2teau+8,+5580+Rochefort/@50.115619,5.0919252,17z/data=!3m1!4b1!4m5!3m4!1s0x47c1cf79b4632161:0x4387c3bde8503eed!8m2!3d50.115619!4d5.0919252" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Thomas Buntinx</b></p>',
+    spots,
+    belgique,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot Belgique Dinant
+  [
+    50.2418056,
+    4.894,
+    '<img class="img-popup" src="images/spot/dinant.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/50%C2%B014\'30.5%22N+4%C2%B053\'38.4%22E/@50.2418056,4.894,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x5be4d2b43d5ca5c4!7e2!8m2!3d50.2418036!4d4.8939992" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Retard Racing</b></p>',
+    spots,
+    belgique,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // *****************************       *****************************
+  // ***************************** Crash *****************************
+  // *****************************       *****************************
+
+  // Crash France st talus breton
+  [
+    48.0082829,
+    -2.8328047,
+    '<img class="img-popup" src="images/spot/sttalus.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/48.0082829,+-2.8328047?sa=X&ved=2ahUKEwjA39qTxs75AhWkgv0HHVDDAOcQ8gF6BAgCEAE" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Préfère pas le dire</b></p>',
+    crashs,
+    france,
+    crashIcon,
+    blue,
+    fillblue,
+    0,
+  ],
+
+  // End Array
 ];
+
+// Start function to put all markers from the array
 
 for (let i = 0; i < points.length; i++) {
   const [
@@ -964,10 +1037,7 @@ for (let i = 0; i < points.length; i++) {
     .addTo(country)
     .addTo(all)
     .addTo(map);
-
 }
-
-
 
 // Options for zoom
 
@@ -993,6 +1063,7 @@ var layerControl = L.control.layers(baseLayers, overlays).addTo(map);
 layerControl.addOverlay(clubs, "Club");
 layerControl.addOverlay(shops, "Shop");
 layerControl.addOverlay(spots, "Spot");
+layerControl.addOverlay(crashs, "Crash");
 layerControl.addOverlay(france, "France");
 layerControl.addOverlay(belgique, "Belgique");
 layerControl.addOverlay(europe, "Europe");
