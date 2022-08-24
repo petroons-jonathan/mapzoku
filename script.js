@@ -6,6 +6,7 @@ var all = L.layerGroup();
 var france = L.layerGroup();
 var belgique = L.layerGroup();
 var europe = L.layerGroup();
+var asie = L.layerGroup();
 
 // Initialize layer for club
 var clubs = L.layerGroup();
@@ -46,8 +47,9 @@ var osm = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 // Choice options for map
 var map = L.map("map", {
   tap: false,
-  center: [47.401012, 4.213326],
-  zoom: 4,
+  // center: [47.401012, 4.213326],
+  center: [47.401012, 13.213326],
+  zoom: 3,
   layers: [osm, all],
 });
 
@@ -523,6 +525,32 @@ let points = [
     15000,
   ],
 
+  // Merguez Gang
+  [
+    46.466000,
+    -0.806065,
+    "<b>Merguez Gang</b></br>85200 Fontenay-le-Comte",
+    clubs,
+    france,
+    clubIcon,
+    red,
+    fillred,
+    15000,
+  ],
+
+  // Speed Yokai
+  [
+    45.739444,
+    4.913888,
+    "<b>Speed Yokai</b></br>69500 Bron",
+    clubs,
+    france,
+    clubIcon,
+    red,
+    fillred,
+    15000,
+  ],
+
   // *****************************       *****************************
   // ***************************** Shops *****************************
   // *****************************       *****************************
@@ -656,6 +684,20 @@ let points = [
     fillblack,
     0,
   ],
+
+  // Fighting Star
+  [
+    35.65824,
+    139.8635702,
+    "<b>ファイティングスター</br>Fighting Star</b></br>8 Chome-21-13 Nishikasai,</br>Edogawa City,</br>Tokyo 134-0088,</br>Japon",
+    shops,
+    asie,
+    shopIcon,
+    black,
+    fillblack,
+    0,
+  ],
+
 
   // PROTUNING
   [
@@ -959,6 +1001,222 @@ let points = [
     0,
   ],
 
+  // Spot France Tunnel du Fret
+  [
+    48.837695,
+    1.900167,
+    '<img class="img-popup" src="images/spot/tunneldufret.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/48.837695,1.900167?sa=X&ved=2ahUKEwiBpcqjmOD5AhVUuKQKHZ3vA3kQ8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Kristen Mallet</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Château de Thoiry
+  [
+    48.864636,
+    1.797866,
+    '<img class="img-popup" src="images/spot/chateaudethoiry.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/48.864636,1.797866?sa=X&ved=2ahUKEwj52vWLmeD5AhUHuqQKHZ8oCGEQ8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Kristen Mallet</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Port Debilly
+  [
+    48.862784,
+    2.295394,
+    '<img class="img-popup" src="images/spot/portdebilly.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B051\'46.0%22N+2%C2%B017\'43.4%22E/@48.8627837,2.2953936,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x53aefaf1908072b5!8m2!3d48.8627837!4d2.2953936" target="_blank">Visiter le spot ⭐</a></b><p class="copy-photo">Photo by <b>Charles</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Circuit de Montlhery
+  [
+    48.623063,
+    2.248361,
+    '<img class="img-popup" src="images/spot/CircuitdeMontlhery.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B051\'46.0%22N+2%C2%B017\'43.4%22E/@48.8627837,2.2953936,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x53aefaf1908072b5!8m2!3d48.8627837!4d2.2953936" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Charles</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Place Vendome
+  [
+    48.868043,
+    2.329386,
+    '<img class="img-popup" src="images/spot/placevendome.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B052\'05.0%22N+2%C2%B019\'45.8%22E/@48.8680426,2.3293859,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xdf72655ac9d8e120!8m2!3d48.8680426!4d2.3293859" target="_blank">Visiter le spot ⭐⭐⭐</a></b><p class="copy-photo">Photo by <b>Charles</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Place Vauban
+  [
+    48.853178,
+    2.312317,
+    '<img class="img-popup" src="images/spot/placevauban.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B051\'11.4%22N+2%C2%B018\'44.3%22E/@48.8531779,2.3123169,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x9e573eadb0ae9568!8m2!3d48.8531779!4d2.3123169" target="_blank">Visiter le spot ⭐⭐</a></b><p class="copy-photo">Photo by <b>Charles</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Tunnel
+  [
+    44.229902,
+    1.503611,
+    '<img class="img-popup" src="images/spot/nosoundtunnel.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/44%C2%B013\'47.7%22N+1%C2%B030\'13.0%22E/@44.2299015,1.5036105,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa045b544abcb9483!8m2!3d44.2299015!4d1.5036105" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Romain</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Chambon
+  [
+    45.548045,
+    2.875496,
+    '<img class="img-popup" src="images/spot/spotchambon.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/45%C2%B032\'53.0%22N+2%C2%B052\'31.8%22E/@45.548045,2.8733073,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x33100c010097ea73!8m2!3d45.548045!4d2.875496" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>YOY_S13_Drift</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Crescent
+  [
+    47.387620,
+    3.908840,
+    '<img class="img-popup" src="images/spot/spotcrescent.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/47%C2%B023\'15.4%22N+3%C2%B054\'31.8%22E/@47.38762,3.90884,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xc88a03dd27134be1!8m2!3d47.38762!4d3.90884" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>imDraz_</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Prescy le sec
+  [
+    47.59118,
+    3.83168,
+    '<img class="img-popup" src="images/spot/spotprecy.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/47.59118,+3.83168?sa=X&ved=2ahUKEwitjOfJrOD5AhUcxQIHHRkUAo0Q8gF6BAgFEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>imDraz_</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+
+  // Spot France Vienne Tag
+  [
+    45.537081,
+    4.87401,
+    '<img class="img-popup" src="images/spot/spotviennetag.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/45%C2%B032\'13.5%22N+4%C2%B052\'26.4%22E/@45.537081,4.87401,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xf5faece50e5318d4!8m2!3d45.537081!4d4.87401" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Tom</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+
+  // Spot France Fécamp
+  [
+    49.762741,
+    0.369058,
+    '<img class="img-popup" src="images/spot/spotfecamp.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/20+Grand+Quai/@49.7627154,0.3689578,17z/data=!4m6!3m5!1s0x47e06b5b3754dbc5:0xc5b1a52664917984!4b1!8m2!3d49.7627154!4d0.3689578" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Anonymous</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Tancarville
+  [
+    49.479222,
+    0.470694,
+    '<img class="img-popup" src="images/spot/spottancarville.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/49%C2%B028\'45.2%22N+0%C2%B028\'14.5%22E/@49.4792222,0.4706944,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x153bfeadd270b822!7e2!8m2!3d49.4792072!4d0.4706812" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Anonymous</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Tancarville
+  [
+    45.1080421,
+    6.0768357,
+    '<img class="img-popup" src="images/spot/spotcoldupoutran.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/Col+du+Poutran/@45.1080421,6.0768357,18z/data=!4m5!3m4!1s0x478a6a5734b224b5:0xd79a50561128f7d9!8m2!3d45.108385!4d6.076846!5m1!1e4" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Mael Klock</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot Belgique 8954 Heuvelland
+  [
+    50.7872578,
+    2.7618814,
+    '<img class="img-popup" src="images/spot/spotheuvelland.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/50.7872578,+2.7618814?sa=X&ved=2ahUKEwidxtPrtOD5AhXEtqQKHWT_DTwQ8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Maxime Louvet</b></p>',
+    spots,
+    belgique,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Dunkerque
+  [
+    51.0401982,
+    2.3673871,
+    '<img class="img-popup" src="images/spot/spotdunkerque.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/51.0401982,+2.3673871?sa=X&ved=2ahUKEwiXv4LJteD5AhXKhP0HHX2AC_wQ8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Maxime Louvet</b></p>',
+    spots,
+    belgique,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+
+
+
+
+
+
   // Spot Belgique Rochefort
   [
     50.115619,
@@ -1002,6 +1260,150 @@ let points = [
     0,
   ],
 
+  // Crash France Fontainebleu
+  [
+    48.353865,
+    2.761234,
+    '<img class="img-popup" src="images/spot/talusfontainebleu.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B021\'13.9%22N+2%C2%B045\'40.4%22E/@48.3538651,2.7612336,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x91ff12f88910dd31!8m2!3d48.3538651!4d2.7612336" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Le Flo</b></p>',
+    crashs,
+    france,
+    crashIcon,
+    blue,
+    fillblue,
+    0,
+  ],
+
+  // Crash France Bouville
+  [
+    48.425540,
+    2.324705,
+    '<img class="img-popup" src="images/spot/talusbouville.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B025\'32.0%22N+2%C2%B019\'28.9%22E/@48.4255403,2.3247048,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x8d002dd72fab30d5!8m2!3d48.4255403!4d2.3247048" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Le Charles</b></p>',
+    crashs,
+    france,
+    crashIcon,
+    blue,
+    fillblue,
+    0,
+  ],
+
+  // Crash France Réclainville
+  [
+    48.342658,
+    1.753599,
+    '<img class="img-popup" src="images/spot/talusreclainville.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/48.3426584,+1.7535987?sa=X&ved=2ahUKEwj7q_Pxo-D5AhW9nf0HHUDTAM8Q8gF6BAgCEAE" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Le rouge c’est bof finalement</b></p>',
+    crashs,
+    france,
+    crashIcon,
+    blue,
+    fillblue,
+    0,
+  ],
+
+  // Crash France Ballainvilliers
+  [
+    48.664634,
+    2.293577,
+    '<img class="img-popup" src="images/spot/talusballainvilliers.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B039\'52.7%22N+2%C2%B017\'36.9%22E/@48.6646336,2.2935774,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x5c696d9d06d5ad4d!8m2!3d48.6646336!4d2.2935774" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Rond point des gentils dames</b></p>',
+    crashs,
+    france,
+    crashIcon,
+    blue,
+    fillblue,
+    0,
+  ],
+
+  // Crash France Auffargis
+  [
+    48.682296,
+    1.931122,
+    '<img class="img-popup" src="images/spot/talusauffragis.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B040\'56.3%22N+1%C2%B055\'52.0%22E/@48.6822958,1.9311224,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x1cbe98a98ec9de7b!8m2!3d48.6822958!4d1.9311224" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Le Kristen</b></p>',
+    crashs,
+    france,
+    crashIcon,
+    blue,
+    fillblue,
+    0,
+  ],
+
+  // Crash France Modus
+  [
+    47.719873,
+    3.279465,
+    '<img class="img-popup" src="images/spot/talusmodus.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/47%C2%B043\'11.5%22N+3%C2%B016\'46.1%22E/@47.7198728,3.2794655,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb1defd805bb3003d!8m2!3d47.7198728!4d3.2794655" target="_blank">Testé en 2017</a></b><p class="copy-photo">Photo by <b>Talus de précision</b></p>',
+    crashs,
+    france,
+    crashIcon,
+    blue,
+    fillblue,
+    0,
+  ],
+
+  // Crash France Rover
+  [
+    48.8402739,
+    2.6007832,
+    '<img class="img-popup" src="images/spot/talusrover.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/48.8402739,+2.6007832?sa=X&ved=2ahUKEwi6_evHp-D5AhXL4KQKHd9aBCcQ8gF6BAgCEAE" target="_blank">Testé en 2019</a></b><p class="copy-photo">Photo by <b>Rond point furtif </b></p>',
+    crashs,
+    france,
+    crashIcon,
+    blue,
+    fillblue,
+    0,
+  ],
+
+  // Crash France Annecy
+  [
+    45.894582,
+    6.123552,
+    '<img class="img-popup" src="images/spot/talusannecy.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/45%C2%B053\'40.5%22N+6%C2%B007\'24.8%22E/@45.894582,6.123552,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x731bb74138f256cc!8m2!3d45.894582!4d6.123552" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Préfère ne pas le dire</b></p>',
+    crashs,
+    france,
+    crashIcon,
+    blue,
+    fillblue,
+    0,
+  ],
+
+  // Crash France filliere
+  [
+    46.026441,
+    6.287077,
+    '<img class="img-popup" src="images/spot/talusfilliere.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B001\'35.2%22N+6%C2%B017\'13.5%22E/@46.026441,6.287077,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xcec4bfd895302087!8m2!3d46.026441!4d6.287077" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Préfère ne pas le dire</b></p>',
+    crashs,
+    france,
+    crashIcon,
+    blue,
+    fillblue,
+    0,
+  ],
+
+  // Crash France Etaux
+  [
+    46.045266,
+    6.256884,
+    '<img class="img-popup" src="images/spot/talusetaux.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/46.045266,6.256884?sa=X&ved=2ahUKEwiq5c6jq-D5AhXw_rsIHZgpAHoQ8gF6BAgCEAE" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Préfère ne pas le dire</b></p>',
+    crashs,
+    france,
+    crashIcon,
+    blue,
+    fillblue,
+    0,
+  ],
+
+  
+  // // Crash France Auffargis
+  // [
+  //   48.682296,
+  //   1.931122,
+  //   '<img class="img-popup" src="images/spot/talusauffragis.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B040\'56.3%22N+1%C2%B055\'52.0%22E/@48.6822958,1.9311224,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x1cbe98a98ec9de7b!8m2!3d48.6822958!4d1.9311224" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Le Kristen</b></p>',
+  //   crashs,
+  //   france,
+  //   crashIcon,
+  //   blue,
+  //   fillblue,
+  //   0,
+  // ],
+
   // End Array
 ];
 
@@ -1041,7 +1443,7 @@ for (let i = 0; i < points.length; i++) {
 
 // Options for zoom
 
-map.options.minZoom = 4;
+map.options.minZoom = 3;
 map.options.maxZoom = 16;
 
 // Overlays options
@@ -1063,10 +1465,11 @@ var layerControl = L.control.layers(baseLayers, overlays).addTo(map);
 layerControl.addOverlay(clubs, "Club");
 layerControl.addOverlay(shops, "Shop");
 layerControl.addOverlay(spots, "Spot");
-layerControl.addOverlay(crashs, "Crash");
+layerControl.addOverlay(crashs, "Talus");
 layerControl.addOverlay(france, "France");
 layerControl.addOverlay(belgique, "Belgique");
 layerControl.addOverlay(europe, "Europe");
+layerControl.addOverlay(asie, "Asie");
 
 // Geolocalisation
 

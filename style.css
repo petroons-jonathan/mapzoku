@@ -97,6 +97,11 @@ body {
 .img-popup {
     width: 200px;
     height: 100%;
+    border-radius: 3px;
+}
+
+.leaflet-popup-content-wrapper {
+    padding:2px !important;
 }
 
 .link-popup {
@@ -104,6 +109,7 @@ body {
     letter-spacing: 1px;
     font-family: var(--opensans);
     color:#bf0600 !important;
+    
 }
 
 .copy-photo {
