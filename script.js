@@ -551,6 +551,19 @@ let points = [
     15000,
   ],
 
+  // PROJECT N 
+  [
+    49.490000,
+    0.571944,
+    "<b>PROJECT N </b></br>76300 Port-Jérôme-sur-Seine",
+    clubs,
+    france,
+    clubIcon,
+    red,
+    fillred,
+    15000,
+  ],
+
   // *****************************       *****************************
   // ***************************** Shops *****************************
   // *****************************       *****************************
@@ -1191,7 +1204,7 @@ let points = [
     2.7618814,
     '<img class="img-popup" src="images/spot/spotheuvelland.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/50.7872578,+2.7618814?sa=X&ved=2ahUKEwidxtPrtOD5AhXEtqQKHWT_DTwQ8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Maxime Louvet</b></p>',
     spots,
-    belgique,
+    france,
     spotIcon,
     green,
     fillgreen,
@@ -1204,17 +1217,77 @@ let points = [
     2.3673871,
     '<img class="img-popup" src="images/spot/spotdunkerque.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/51.0401982,+2.3673871?sa=X&ved=2ahUKEwiXv4LJteD5AhXKhP0HHX2AC_wQ8gF6BAgCEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Maxime Louvet</b></p>',
     spots,
-    belgique,
+    france,
     spotIcon,
     green,
     fillgreen,
     0,
   ],
 
+  // Spot France Chatel Censoir
+  [
+    47.5409199,
+    3.6358653,
+    '<img class="img-popup" src="images/spot/spotchatelcensoir.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/89660+Ch%C3%A2tel-Censoir/@47.5409199,3.6358653,17z/data=!4m5!3m4!1s0x47ee24b7a9173e1b:0xe55a09cd28740f!8m2!3d47.5409199!4d3.6358653?hl=fr-FR" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>L3xuszoku89</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
+  // Spot France Brosses
+  [
+    47.5523466,
+    3.6358653,
+    '<img class="img-popup" src="images/spot/spotbrosses.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/47%C2%B033\'08.5%22N+3%C2%B041\'09.9%22E/@47.5523466,3.683883,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xcc5f94d98c42dcbb!8m2!3d47.5523466!4d3.6860717?hl=fr-FR" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>L3xuszoku89</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
+  // Spot France Lucy-sur-Yonne
+  [
+    47.5268312,
+    3.5795749,
+    '<img class="img-popup" src="images/spot/spotlucysuryonne.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/47%C2%B031\'36.6%22N+3%C2%B034\'54.4%22E/@47.5268312,3.5795749,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe13577902e8e91a2!8m2!3d47.5268312!4d3.5817636?hl=fr-FR" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>L3xuszoku89</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
+  // Spot France calle de Vannes
+  [
+    47.653974,
+    -2.757943,
+    '<img class="img-popup" src="images/spot/spotcallevannes.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/47%C2%B039\'14.3%22N+2%C2%B045\'28.6%22W/@47.653974,-2.7594684,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x803cc323bb19e781!7e2!8m2!3d47.6539737!4d-2.757943" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Zeno_Pics</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
+  // Spot France aerodrome Monterblanc
+  [
+    47.730000,
+    -2.719760,
+    '<img class="img-popup" src="images/spot/spotaeromonterblanc.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/47%C2%B043\'48.0%22N+2%C2%B043\'11.1%22W/@47.7300003,-2.7197603,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x2016a563b318cb!8m2!3d47.7300003!4d-2.7197603" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Zeno_Pics</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
 
 
   // Spot Belgique Rochefort
@@ -1235,6 +1308,19 @@ let points = [
     50.2418056,
     4.894,
     '<img class="img-popup" src="images/spot/dinant.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/50%C2%B014\'30.5%22N+4%C2%B053\'38.4%22E/@50.2418056,4.894,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x5be4d2b43d5ca5c4!7e2!8m2!3d50.2418036!4d4.8939992" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Retard Racing</b></p>',
+    spots,
+    belgique,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot Belgique Dinant
+  [
+    50.339534,
+    4.863561,
+    '<img class="img-popup" src="images/spot/spotyvoir.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/50%C2%B020\'22.3%22N+4%C2%B051\'48.8%22E/@50.3395342,4.8613727,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x6acdceb53ab51c60!8m2!3d50.3395342!4d4.8635614?hl=fr-BE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>L’homme en Mini</b></p>',
     spots,
     belgique,
     spotIcon,
@@ -1389,6 +1475,32 @@ let points = [
     fillblue,
     0,
   ],
+
+    // Crash France Coulanges-sur-Yonne
+    [
+      47.5201832,
+      3.5407717,
+      '<img class="img-popup" src="images/spot/spotcoulangessuryonne.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps?q=47.5201832,3.5407717&hl=fr-FR&gl=fr&entry=gps&g_ep=CAISBjYuMzEuMxgA&shorturl=1" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>L3xuszoku89</b></p>',
+      crashs,
+      france,
+      crashIcon,
+      blue,
+      fillblue,
+      0,
+    ],
+
+    // Crash France Lamballe-Armor
+    [
+      48.475988,
+      -2.500735,
+    '<img class="img-popup" src="images/spot/taluslamballearmor.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B028\'33.6%22N+2%C2%B030\'02.7%22W/@48.4977237,-2.4432446,9.97z/data=!4m5!3m4!1s0x0:0x962c54d5ef63f812!8m2!3d48.4759877!4d-2.5007354" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Zeno_Pics</b></p>',
+      crashs,
+      france,
+      crashIcon,
+      blue,
+      fillblue,
+      0,
+    ],
 
   
   // // Crash France Auffargis
