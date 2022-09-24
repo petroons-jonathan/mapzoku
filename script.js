@@ -1289,6 +1289,111 @@ let points = [
     0,
   ],
 
+  // Spot France Sete
+  [
+    43.413920,
+    3.694410,
+    '<img class="img-popup" src="images/spot/spot-sete.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/43%C2%B024\'50.1%22N+3%C2%B041\'39.9%22E/@43.41392,3.6922213,17z/data=!4m5!3m4!1s0x0:0x539ce5fd64df616e!8m2!3d43.41392!4d3.69441" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Calvin Morihain</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France Gémenos
+  [
+    43.315320,
+    5.661510,
+    '<img class="img-popup" src="images/spot/spot-gemenos.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/43%C2%B018\'55.2%22N+5%C2%B039\'41.4%22E/@43.31532,5.66151,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x471833971e4d38f0!8m2!3d43.31532!4d5.66151" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Calvin Morihain</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // Spot France baux de provence
+  [
+    43.748710,
+    4.796370,
+    '<img class="img-popup" src="images/spot/spot-baux-provence.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/43.74871,+4.79637?sa=X&ved=2ahUKEwiC85OevK36AhWJ-6QKHQHvCj0Q8gF6BAgDEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Calvin Morihain</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+
+  // // Spot France Merindol
+  // [
+  //   43.740180,
+  //   5.175420,
+  //   '<img class="img-popup" src="images/spot/spot-merindol.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/43.74871,+4.79637?sa=X&ved=2ahUKEwiC85OevK36AhWJ-6QKHQHvCj0Q8gF6BAgDEAE" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Calvin Morihain</b></p>',
+  //   spots,
+  //   france,
+  //   spotIcon,
+  //   green,
+  //   fillgreen,
+  //   0,
+  // ],
+
+  
+  // Spot France fère en tardenois
+  [
+    49.151500,
+    3.555400,
+    '<img class="img-popup" src="images/spot/spot-fere.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/49%C2%B009\'05.4%22N+3%C2%B033\'19.4%22E/@49.1515,3.5554,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x7187442dbf107370!8m2!3d49.1515!4d3.5554" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Ceylan</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+  
+  // Spot France rond-point TGV Bezannes
+  [
+    49.215018,
+    3.998371,
+    '<img class="img-popup" src="images/spot/spot-bezannes.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/49%C2%B012\'54.1%22N+3%C2%B059\'54.1%22E/@49.215018,3.9973078,18z/data=!3m1!4b1!4m14!1m7!3m6!1s0x0:0xd61086d45e61acf7!2zNDnCsDEyJzUzLjAiTiAzwrA1OSc1Mi4wIkU!3b1!8m2!3d49.1253!4d3.5952!3m5!1s0x0:0x4452c1027d5f7df9!7e2!8m2!3d49.2150183!4d3.9983712" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Ceylan</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+  
+  // Spot France  silo canal de Reims 
+  [
+    49.264444,
+    4.005278,
+    '<img class="img-popup" src="images/spot/spot-canal-reims.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/49%C2%B015\'52.0%22N+4%C2%B000\'19.0%22E/@49.2644444,4.0052778,17z/data=!4m5!3m4!1s0x0:0x7051f4cb84e38554!8m2!3d49.2644444!4d4.0052778" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>EEFHRED</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+  
+  // Spot France  Circuit de Gueux
+  [
+    49.252499,
+    3.925163,
+    '<img class="img-popup" src="images/spot/spot-circuit-gueux.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/49%C2%B015\'09.0%22N+3%C2%B055\'30.6%22E/@49.252499,3.925163,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x918b854a3f05b967!8m2!3d49.252499!4d3.925163" target="_blank">Visiter le spot</a></b><p class="copy-photo">Photo by <b>Laurane Paul</b></p>',
+    spots,
+    france,
+    spotIcon,
+    green,
+    fillgreen,
+    0,
+  ],
+  
 
   // Spot Belgique Rochefort
   [
@@ -1494,6 +1599,32 @@ let points = [
       48.475988,
       -2.500735,
     '<img class="img-popup" src="images/spot/taluslamballearmor.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B028\'33.6%22N+2%C2%B030\'02.7%22W/@48.4977237,-2.4432446,9.97z/data=!4m5!3m4!1s0x0:0x962c54d5ef63f812!8m2!3d48.4759877!4d-2.5007354" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Zeno_Pics</b></p>',
+      crashs,
+      france,
+      crashIcon,
+      blue,
+      fillblue,
+      0,
+    ],
+
+    // Crash France Luçon
+    [
+      46.467389,
+      -1.152556,
+    '<img class="img-popup" src="images/spot/talus-lucon.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/search/46%C2%B028\'02.6%22N,+1%C2%B009\'09.2%22W?sa=X&ved=2ahUKEwjXm4y3xK36AhWFxAIHHQXADOIQ8gF6BAgMEAE" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Erwan Bajrozoku</b></p>',
+      crashs,
+      france,
+      crashIcon,
+      blue,
+      fillblue,
+      0,
+    ],
+
+    // Crash France Fere-Sarthe
+    [
+      47.899046,
+      -0.018060,
+    '<img class="img-popup" src="images/spot/talus-fere-sarthe.jpg"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/47%C2%B053\'56.6%22N+0%C2%B001\'05.0%22W/@47.899046,-0.01806,17z/data=!3m1!4b1!4m6!3m5!1s0!7e2!8m2!3d47.8990459!4d-0.01806" target="_blank">Éviter ce coin</a></b><p class="copy-photo">Photo by <b>Anais Demion</b></p>',
       crashs,
       france,
       crashIcon,
