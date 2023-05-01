@@ -20,6 +20,9 @@ var spots = L.layerGroup();
 // Initialize layer for spot
 var crashs = L.layerGroup();
 
+// Initialize layer for spot
+var dragonBall = L.layerGroup();
+
 // Color
 
 var green = "#00592b";
@@ -30,6 +33,8 @@ var red = "#750101";
 var fillred = "#db0404";
 var blue = "#1b5299";
 var fillblue = "#54c6eb";
+var orange = "#F88701";
+var fillorange = "#A50104";
 
 // ("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png");
 
@@ -65,6 +70,7 @@ var clubIcon = L.ExtraMarkers.icon({
   markerColor: "red",
   shape: "penta",
   prefix: "fa-solid",
+  iconColor : "white",
 });
 
 // Create a shopIcon
@@ -73,6 +79,7 @@ var shopIcon = L.ExtraMarkers.icon({
   markerColor: "black",
   shape: "penta",
   prefix: "fa-solid",
+  iconColor : "white",
 });
 
 // Create a shopIcon
@@ -81,6 +88,7 @@ var spotIcon = L.ExtraMarkers.icon({
   markerColor: "green",
   shape: "penta",
   prefix: "fa-solid",
+  iconColor : "white",
 });
 
 // Create a crashIcon
@@ -89,6 +97,17 @@ var crashIcon = L.ExtraMarkers.icon({
   markerColor: "blue",
   shape: "penta",
   prefix: "fa-solid",
+  iconColor : "white",
+});
+
+
+// Create a dragonBallIcon
+var dragonBallIcon = L.ExtraMarkers.icon({
+  icon: "fa-star",
+  markerColor: "orange",
+  shape: "circle",
+  prefix: "fa-solid",
+  iconColor : "#bf0600",
 });
 
 let points = [
@@ -1647,6 +1666,23 @@ let points = [
   //   0,
   // ],
 
+
+  // Start Dragon Ball
+
+      // Dragon Ball 4
+      [
+        48.531863,
+        4.487402,
+      '<img class="img-popup" src="images/BALLS.png"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B031\'54.7%22N+4%C2%B029\'14.7%22E/@48.531863,4.487402,17z/data=!3m1!4b1!4m4!3m3!8m2!3d48.531863!4d4.487402" target="_blank">Trouver ce coin</a></b><p class="copy-photo"><b>Dragon Ball</b></p>',
+        dragonBall,
+        belgique,
+        dragonBallIcon,
+        orange,
+        fillorange,
+        250,
+        
+      ],
+
   // End Array
 ];
 
@@ -1709,6 +1745,7 @@ layerControl.addOverlay(clubs, "Club");
 layerControl.addOverlay(shops, "Shop");
 layerControl.addOverlay(spots, "Spot");
 layerControl.addOverlay(crashs, "Talus");
+layerControl.addOverlay(dragonBall, "Dragon Ball");
 layerControl.addOverlay(france, "France");
 layerControl.addOverlay(belgique, "Belgique");
 layerControl.addOverlay(europe, "Europe");
