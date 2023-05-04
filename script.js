@@ -1670,18 +1670,18 @@ let points = [
   // Start Dragon Ball
 
       // Dragon Ball 4
-      [
-        48.531863,
-        4.487402,
-      '<img class="img-popup" src="images/BALLS.png"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B031\'54.7%22N+4%C2%B029\'14.7%22E/@48.531863,4.487402,17z/data=!3m1!4b1!4m4!3m3!8m2!3d48.531863!4d4.487402" target="_blank">Trouver ce coin</a></b><p class="copy-photo"><b>Dragon Ball</b></p>',
-        dragonBall,
-        belgique,
-        dragonBallIcon,
-        orange,
-        fillorange,
-        250,
+      // [
+      //   48.531863,
+      //   4.487402,
+      // '<img class="img-popup" src="images/BALLS.png"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/48%C2%B031\'54.7%22N+4%C2%B029\'14.7%22E/@48.531863,4.487402,17z/data=!3m1!4b1!4m4!3m3!8m2!3d48.531863!4d4.487402" target="_blank">Trouver ce coin</a></b><p class="copy-photo"><b>Dragon Ball</b></p>',
+      //   dragonBall,
+      //   belgique,
+      //   dragonBallIcon,
+      //   orange,
+      //   fillorange,
+      //   250,
         
-      ],
+      // ],
 
   // End Array
 ];
