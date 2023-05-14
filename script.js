@@ -1683,6 +1683,20 @@ let points = [
         
       // ],
 
+      // Dragon Ball 5
+      [
+        45.976713,
+        3.923552,
+      '<img class="img-popup" src="images/BALLS.png"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/45%C2%B058\'36.2%22N+3%C2%B055\'24.8%22E/@45.976713,3.923552,17z/data=!3m1!4b1!4m4!3m3!8m2!3d45.976713!4d3.923552" target="_blank">Trouver ce coin</a></b><p class="copy-photo"><b>Dragon Ball</b></p>',
+        dragonBall,
+        france,
+        dragonBallIcon,
+        orange,
+        fillorange,
+        250,
+        
+      ],
+
   // End Array
 ];
 
