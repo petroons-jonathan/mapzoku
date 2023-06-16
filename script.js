@@ -1696,6 +1696,19 @@ let points = [
         250,
         
       ],
+      // Dragon Ball 6
+      [
+        46.2952048,
+        6.7880933,
+      '<img class="img-popup" src="images/BALLS.png"/></br><b><a class="link-popup" href="https://www.google.com/maps/place/46%C2%B017\'42.7%22N+6%C2%B047\'17.1%22E/@46.2952048,6.7880933,17z/data=!3m1!4b1!4m4!3m3!8m2!3d46.2952048!4d6.7880933?entry=ttu" target="_blank">Trouver ce coin</a></b><p class="copy-photo"><b>Dragon Ball 6</b></p>',
+        dragonBall,
+        france,
+        dragonBallIcon,
+        orange,
+        fillorange,
+        250,
+        
+      ],
       // Dragon Ball ?
       // [
       //   45.976713,
